@@ -22,6 +22,11 @@ Values in the list can be used to install device drivers on Windows 2000 and lat
 
 ## Device categories and class values 
 
+**Audio Processing Objects (APOs)**  
+Class = AudioProcessingObject  
+ClassGuid = {5989fce8-9cd0-467d-8a6a-5419e31529d4}  
+This class includes Audio processing objects (APOs). For more info, see [Windows Audio Processing Objects](../audio/windows-audio-processing-objects.md).  
+
 **Battery Devices**  
 Class = Battery  
 ClassGuid = {72631e54-78a4-11d0-bcf7-00aa00b7b32a}  
@@ -283,5 +288,4 @@ ClassGuid = {eec5ad98-8080-425f-922a-dabf3de3f69a}
    
   
 
-  
   

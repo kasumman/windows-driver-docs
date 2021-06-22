@@ -14,11 +14,11 @@ In this configuration, the extensible switch extensions are exposed to every net
 
 The following figure shows the data path for packet traffic to or from the underlying extensible switch team that is bound to the external network adapter for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.40](images/vswitchteam-ndis640.png)
+![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.40.](images/vswitchteam-ndis640.png)
 
 The following figure shows the data path for packet traffic to or from the underlying extensible switch team that is bound to the external network adapter for NDIS 6.30 (Windows Server 2012).
 
-![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.30](images/vswitchteam.png)
+![data path for packet traffic to or from the vswitch team that is bound to the external network adapter for ndis 6.30.](images/vswitchteam.png)
 
 Teaming providers can do everything that a forwarding extension can. In addition, teaming providers can do the following.
 
@@ -48,7 +48,7 @@ Teaming providers must follow these guidelines when managing an extensible switc
 
 -   If the teaming provider issues or forwards packets to a physical adapter, it must specify the nonzero network adapter index value of the physical adapter connection.
 
-    When the provider receives packets, it can determine the source network adapter index value from the packet's out-of-band forwarding context in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. For more information about the forwarding context, see [Hyper-V Extensible Switch Forwarding Context](hyper-v-extensible-switch-forwarding-context.md).
+    When the provider receives packets, it can determine the source network adapter index value from the packet's out-of-band forwarding context in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. For more information about the forwarding context, see [Hyper-V Extensible Switch Forwarding Context](hyper-v-extensible-switch-forwarding-context.md).
 
     For more information, see [Hyper-V Extensible Switch Data Path](hyper-v-extensible-switch-data-path.md).
 

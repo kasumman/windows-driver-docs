@@ -16,11 +16,11 @@ In this configuration, an extensible switch extension is exposed to every networ
 
 The following figure shows an example of an extensible switch team for NDIS 6.40 (Windows Server 2012 R2) and later.
 
-![diagram of extensible switch team for ndis 6.40](images/vswitch-oid-controlpath2-ndis640.png)
+![diagram of extensible switch team for ndis 6.40.](images/vswitch-oid-controlpath2-ndis640.png)
 
 The following figure shows an example of an extensible switch team for NDIS 6.30 (Windows Server 2012).
 
-![diagram of extensible switch team for ndis 6.30](images/vswitch-oid-controlpath2.png)
+![diagram of extensible switch team for ndis 6.30.](images/vswitch-oid-controlpath2.png)
 
 **Note**  In the extensible switch interface, NDIS filter drivers are known as *extensible switch extensions* and the driver stack is known as the *extensible switch driver stack*.
 
@@ -113,7 +113,7 @@ The forwarding extension must follow these guidelines for handling hardware offl
 
     The **SourceNicIndex** member must be set to **NDIS\_SWITCH\_DEFAULT\_NIC\_INDEX**.
 
--   When the extension calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request, it must set the *OidRequest* parameter to a pointer to an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for an [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) OID request.
+-   When the extension calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request, it must set the *OidRequest* parameter to a pointer to an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for an [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) OID request.
 
 For more information on how the extension filters OID requests, see [Filtering OID Requests in an NDIS Filter Driver](filtering-oid-requests-in-an-ndis-filter-driver.md).
 

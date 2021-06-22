@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-If the NDIS\_NBL\_FLAGS\_IS\_LOOPBACK\_PACKET flag in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure is set, the packet is a loopback packet. Protocol drivers and filter drivers can check this flag to determine if a packet is a loopback packet.
+If the NDIS\_NBL\_FLAGS\_IS\_LOOPBACK\_PACKET flag in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure is set, the packet is a loopback packet. Protocol drivers and filter drivers can check this flag to determine if a packet is a loopback packet.
 
 NDIS loops packets back if all of the following three conditions are satisfied:
 
@@ -49,7 +49,7 @@ A protocol binding will not receive loopback packets if either of the following 
 
 The following figure shows the loopback algorithm logic flow.
 
-![flowchart illustrating the loopback algorithm logic flow](images/loopback.png)
+![flowchart illustrating the loopback algorithm logic flow.](images/loopback.png)
 
  
 
